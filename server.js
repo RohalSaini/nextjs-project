@@ -24,6 +24,6 @@ app.prepare().then(() => {
     }
   }).listen(process.env.port, (err) => {
     if (err) throw err
-    console.log(process.env.port)
+    console.log(process.env.PORT)
   })
 })
