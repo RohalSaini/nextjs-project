@@ -79,7 +79,7 @@ const ArticleList = ({ articles  })=>{
         className: (Article_module_default()).grid,
         children: [
             " ",
-            articles.map((article)=>/*#__PURE__*/ jsx_runtime_.jsx("col", {
+            articles.map((article)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
                     children: /*#__PURE__*/ jsx_runtime_.jsx(components_ArticleItem, {
                         article: article
                     })
