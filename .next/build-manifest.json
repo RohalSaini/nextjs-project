@@ -5,9 +5,9 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/qyUBPWgPpOwDbA1eI-Ngo/_buildManifest.js",
-    "static/qyUBPWgPpOwDbA1eI-Ngo/_ssgManifest.js",
-    "static/qyUBPWgPpOwDbA1eI-Ngo/_middlewareManifest.js"
+    "static/d15FtktRSB8_Z6WZ86SPR/_buildManifest.js",
+    "static/d15FtktRSB8_Z6WZ86SPR/_ssgManifest.js",
+    "static/d15FtktRSB8_Z6WZ86SPR/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
