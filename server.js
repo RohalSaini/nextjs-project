@@ -21,7 +21,7 @@ app.prepare().then(() => {
     } else {
       handle(req, res, parsedUrl)
     }
-  }).listen(port, (err) => {
+  }).listen(process.env.port, (err) => {
     if (err) throw err
     console.log('> Ready on http://localhost:3000')
   })
