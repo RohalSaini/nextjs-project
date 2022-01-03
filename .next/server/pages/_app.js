@@ -4,40 +4,40 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 168:
+/***/ 776:
 /***/ ((module) => {
 
 // Exports
 module.exports = {
-	"title": "Header_title__UlymB",
-	"description": "Header_description__YuMkT"
+	"title": "Header_title__duTZ8",
+	"description": "Header_description__NtTnp"
 };
 
 
 /***/ }),
 
-/***/ 288:
+/***/ 4:
 /***/ ((module) => {
 
 // Exports
 module.exports = {
-	"container": "Home_container__bCOhY",
-	"main": "Home_main__nLjiQ",
-	"footer": "Home_footer____T7K",
-	"title": "Home_title__T09hD",
-	"description": "Home_description__41Owk",
-	"code": "Home_code__suPER"
+	"container": "Home_container__97eC3",
+	"main": "Home_main__OVLM4",
+	"footer": "Home_footer__zed0_",
+	"title": "Home_title__q0Qg4",
+	"description": "Home_description__JhekB",
+	"code": "Home_code__2i1pD"
 };
 
 
 /***/ }),
 
-/***/ 211:
+/***/ 358:
 /***/ ((module) => {
 
 // Exports
 module.exports = {
-	"nav": "Nav_nav__Bx_p6"
+	"nav": "Nav_nav__bbBcN"
 };
 
 
@@ -57,13 +57,13 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
-// EXTERNAL MODULE: ./styles/Home.module.css
-var Home_module = __webpack_require__(288);
+// EXTERNAL MODULE: ./styles/Home.module.scss
+var Home_module = __webpack_require__(4);
 var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(664);
-// EXTERNAL MODULE: ./styles/Nav.module.css
-var Nav_module = __webpack_require__(211);
+// EXTERNAL MODULE: ./styles/Nav.module.scss
+var Nav_module = __webpack_require__(358);
 var Nav_module_default = /*#__PURE__*/__webpack_require__.n(Nav_module);
 ;// CONCATENATED MODULE: ./components/Nav.js
 
@@ -82,7 +82,7 @@ const Nav = ()=>{
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("li", {
                     children: /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                        href: "/",
+                        href: "/about",
                         children: "About"
                     })
                 }),
@@ -98,8 +98,8 @@ const Nav = ()=>{
 };
 /* harmony default export */ const components_Nav = (Nav);
 
-// EXTERNAL MODULE: ./styles/Header.module.css
-var Header_module = __webpack_require__(168);
+// EXTERNAL MODULE: ./styles/Header.module.scss
+var Header_module = __webpack_require__(776);
 var Header_module_default = /*#__PURE__*/__webpack_require__.n(Header_module);
 ;// CONCATENATED MODULE: ./components/Header.js
 
@@ -125,7 +125,10 @@ const Header = ()=>{
 };
 /* harmony default export */ const components_Header = (Header);
 
+// EXTERNAL MODULE: ./components/Meta.js
+var Meta = __webpack_require__(549);
 ;// CONCATENATED MODULE: ./components/Layout.js
+
 
 
 
@@ -133,6 +136,8 @@ const Header = ()=>{
 const Layout = ({ children  })=>{
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
+            /*#__PURE__*/ jsx_runtime_.jsx(Meta/* default */.Z, {
+            }),
             /*#__PURE__*/ jsx_runtime_.jsx(components_Nav, {
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -276,6 +281,14 @@ module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
+/***/ 968:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/head");
+
+/***/ }),
+
 /***/ 689:
 /***/ ((module) => {
 
@@ -299,7 +312,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664], () => (__webpack_exec__(57)));
+var __webpack_exports__ = __webpack_require__.X(0, [730,664,549], () => (__webpack_exec__(57)));
 module.exports = __webpack_exports__;
 
 })();

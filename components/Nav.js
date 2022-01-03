@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import navStyles from '../styles/Nav.module.css'
+import navStyles from '../styles/Nav.module.scss'
 
 const Nav = () => {
     return (
@@ -9,7 +9,7 @@ const Nav = () => {
                     <Link href="/">Home</Link>
                 </li>
                 <li>
-                    <Link href="/">About</Link>
+                    <Link href="/about">About</Link>
                 </li>
                 <li>
                     <Link href="/">Contact</Link>

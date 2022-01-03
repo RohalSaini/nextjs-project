@@ -4,21 +4,21 @@ exports.id = 405;
 exports.ids = [405];
 exports.modules = {
 
-/***/ 140:
+/***/ 517:
 /***/ ((module) => {
 
 // Exports
 module.exports = {
-	"grid": "Article_grid__kFo2I",
-	"card": "Article_card__p_LF5",
-	"logo": "Article_logo__TjePz",
-	"title": "Article_title__Wpjbe"
+	"grid": "Article_grid__SpR8S",
+	"card": "Article_card__lpYba",
+	"logo": "Article_logo__0GlVS",
+	"title": "Article_title__VZJwp"
 };
 
 
 /***/ }),
 
-/***/ 367:
+/***/ 35:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -33,11 +33,10 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
-;// CONCATENATED MODULE: external "next/head"
-const head_namespaceObject = require("next/head");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
-// EXTERNAL MODULE: ./styles/Article.module.css
-var Article_module = __webpack_require__(140);
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__(968);
+// EXTERNAL MODULE: ./styles/Article.module.scss
+var Article_module = __webpack_require__(517);
 var Article_module_default = /*#__PURE__*/__webpack_require__.n(Article_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(664);
@@ -47,20 +46,18 @@ var next_link = __webpack_require__(664);
 
 const ArticleItem = ({ article  })=>{
     return(/*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-        href: "/article/{id}",
+        href: "/article/[id]",
         as: `/article/${article.id}`,
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
             className: (Article_module_default()).card,
             children: [
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h3", {
-                    className: (Article_module_default()).title,
                     children: [
                         article.title,
                         " →"
                     ]
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                    className: (Article_module_default()).card,
                     children: article.body
                 })
             ]
@@ -79,10 +76,8 @@ const ArticleList = ({ articles  })=>{
         className: (Article_module_default()).grid,
         children: [
             " ",
-            articles.map((article)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    children: /*#__PURE__*/ jsx_runtime_.jsx(components_ArticleItem, {
-                        article: article
-                    })
+            articles.map((article)=>/*#__PURE__*/ jsx_runtime_.jsx(components_ArticleItem, {
+                    article: article
                 }, article.id)
             )
         ]
@@ -95,25 +90,21 @@ const ArticleList = ({ articles  })=>{
 
 
 function Home({ articles  }) {
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        children: [
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("title", {
-                        children: "Web News"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        name: "keywords",
-                        content: "web development,programing"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(components_ArticleList, {
-                articles: articles
-            })
-        ]
+    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
+        children: /*#__PURE__*/ jsx_runtime_.jsx(components_ArticleList, {
+            articles: articles
+        })
     }));
 };
+// export const getStaticProps = async () => {
+//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+//   const articles = await res.json()
+//   return {
+//     props: {
+//       articles
+//     }
+//   }
+// }
 const getServerSideProps = async ()=>{
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`);
     const articles = await res.json();
@@ -231,6 +222,14 @@ module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
+/***/ 968:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/head");
+
+/***/ }),
+
 /***/ 689:
 /***/ ((module) => {
 
@@ -254,7 +253,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [730,664], () => (__webpack_exec__(367)));
+var __webpack_exports__ = __webpack_require__.X(0, [730,664], () => (__webpack_exec__(35)));
 module.exports = __webpack_exports__;
 
 })();

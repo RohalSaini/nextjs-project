@@ -1,12 +1,10 @@
-import articleStyle from '../styles/Article.module.css'
+import articleStyle from '../styles/Article.module.scss'
 import ArticleItem from './ArticleItem';
 const ArticleList = ({articles}) => {
     console.log(articles)
     return (
         <div className={articleStyle.grid}> {articles.map((article) => (
-                 <div key = {article.id}>
-                       <ArticleItem article ={article}/>
-                 </div>   
+                        <ArticleItem key ={article.id} article ={article}/>
               ))}
         </div>
 
