@@ -21,7 +21,7 @@ export default function Home( {articles}) {
 // }
 
 export const getServerSideProps = async () => {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+  const res = await fetch(`https://nextjs-pr.herokuapp.com/api/articles`)
   
   const articles = await res.json()
   

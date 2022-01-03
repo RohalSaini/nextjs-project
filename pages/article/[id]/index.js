@@ -1,6 +1,7 @@
 import {useRouter} from 'next/router'
 import Link from 'next/link'
 import { articles } from '../../../data'
+import articleStyle from '../../../styles/Article.module.scss'
 
 import Meta from '../../../components/Meta'
 const Article = ({article}) => {
@@ -10,16 +11,17 @@ const Article = ({article}) => {
     console.log("Article is ");
     console.log(article);
     return <>
-        <div> {article.id}</div>
-        <div> {article.title}</div>
-        <div> {article.body}</div>
+        <div className={articleStyle.card}>
+          <div className={articleStyle.title}> {article[0].title}</div>
+          <div> {article[0].body}</div>
+        </div>
         <Link href='/'>Get Back</Link>
     </>
 }
 
 export const getServerSideProps = async (context) => {
     console.log("id is "+context.params.id);
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`
+    const res = await fetch(`https://nextjs-pr.herokuapp.com/api/articles/${context.params.id}`
     )
  
 //    console.log("url is "+`${server}/api/articles/${context.params.id}`);    
