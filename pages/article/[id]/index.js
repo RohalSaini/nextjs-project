@@ -10,13 +10,9 @@ const Article = ({article}) => {
     console.log("Article is ");
     console.log(article);
     return <>
-    
-        <Meta title={articles[0].title}/>
-         <div> {id}</div>
-        <div> {article[0].userId}</div>
-        <div> {article[0].id}</div>
-        <div> {article[0].title}</div>
-        <div> {article[0].body}</div>
+        <div> {article.id}</div>
+        <div> {article.title}</div>
+        <div> {article.body}</div>
         <Link href='/'>Get Back</Link>
     </>
 }

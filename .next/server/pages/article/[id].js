@@ -79,37 +79,22 @@ const Article = ({ article  })=>{
     console.log(article);
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(Meta/* default */.Z, {
-                title: articles[0].title
-            }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 children: [
                     " ",
-                    id
+                    article.id
                 ]
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 children: [
                     " ",
-                    article[0].userId
+                    article.title
                 ]
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 children: [
                     " ",
-                    article[0].id
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                children: [
-                    " ",
-                    article[0].title
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                children: [
-                    " ",
-                    article[0].body
+                    article.body
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
