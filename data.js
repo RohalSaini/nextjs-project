@@ -2,20 +2,14 @@ export const articles = [
     {
     userId: 1,
     id: 1,
-    title: 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit',
-    body: 'quia et suscipit\n' +
-      'suscipit recusandae consequuntur expedita et cum\n' +
-      'reprehenderit molestiae ut ut quas totam\n' +
-      'nostrum rerum est autem sunt rem eveniet architecto'
+    title: 'Shoes',
+    body: 'Branded Shoes of latest trend is alvailable'
   },
   {
-    userId: 1,
+    userId: 2,
     id: 2,
-    title: 'qui est esse',
-    body: 'est rerum tempore vitae\n' +
-      'sequi sint nihil reprehenderit dolor beatae ea dolores neque\n' +
-      'fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\n' +
-      'qui aperiam non debitis possimus qui neque nisi nulla'
+    title: 'Shirts',
+    body: 'Branded Shirts of latest trend is alvailable'
   },
   {
     userId: 1,
